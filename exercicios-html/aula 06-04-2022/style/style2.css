@@ -1,0 +1,70 @@
+div {
+    background-color: bisque;
+}
+h1 {
+    color: cadetblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+p {
+    color: cadetblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Resolução de celulares */
+@media screen and (max-width: 767px) {
+    div {
+        background-color: cadetblue;
+    }
+    h1 {
+        color: bisque;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    p {
+        color: bisque;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+/* Resulução de tablets */
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    div {
+        background-color: darkgray;
+    }
+    h1 {
+        color: cornflowerblue;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    p {
+        color: cornflowerblue;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+/* Resolução em desktops */
+@media screen and (min-width: 1024px) {
+    div {
+        background-color: burlywood;
+    }
+    h1 {
+        color: cornflowerblue;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    p {
+        color: bisque;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+/*  Resolução em desktops em alta resolução */
+@media screen and (min-width: 1280px) {
+    div {
+        background-color: coral;
+    }
+    h1 {
+        color: cornflowerblue;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    p {
+        color: cornflowerblue;
+        font-family: 'Courier New', Courier, mon
+    }
+}
