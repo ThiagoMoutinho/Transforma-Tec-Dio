@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <p><h2>Formulário de cadastro</h2></p>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td><label for="nome">Nome</label></td>
+                <td><label for="sobrenome">Sobrenome</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="nome" Nome="nome" placeholder="nome"></td>
+                <td><input type="text" id="sobrenome" Nome="sobrenome" placeholder="sobrenome" required="true"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><label for="dataNasc">Data de nascimento</label></td>
+            </tr>
+            <tr>
+                <td><input type="email" id="email" nome="email" placeholder="email" required="true"></td>
+                <td><input type="date" name="dataNasc" id="dataNasc"></td>
+            </tr>
+            <tr>
+                <td><label for="endereco">Endereço</label></td>
+                <td><label for="estado">Estado</label></td>
+            </tr>
+            <tr>
+                <td><input type="endereco" name="endereco" id="endereco" placeholder="endereco" required="true"></td>
+                <td>
+                    <select name="estado" id="estado" required="true">
+                        <option value="">Selecione</option>
+                        <option value="">Acre</option>
+                        <option value="">Alagoas</option>
+                        <option value="">Amapá</option>
+                        <option value="">Amazonas</option>
+                        <option value="">Bahia</option>
+                        <option value="">Ceára</option>
+                        <option value="">Distrito</option>
+                        <option value="">Espirito Santo</option>
+                        <option value="">Goiás</option>
+                        <option value="">Maranhão</option>
+                        <option value="">Mato Grosso Do Sul</option> 
+                        <option value="">Rio grande do sul</option>
+                        <option value="">Rio grande do Norte</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="cidade">Cidade</label></td>
+                <td><label for="cep">Cep</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="cidade" id="cidade" placeholder="cidade" required="true"></td>
+                <td><input type="number" name="cep" id="cep" placeholder="cep" maxlength="8" required="true"></td>
+            </tr>
+            <tr>
+                <td><label for="descricao">Descrição</label></td>
+                <td><label for="profissao">Profissão</label></td>
+            </tr>
+            <tr>
+                <td><textarea name="descricao" id="descricao" cols="19" rows="4" required="true"></textarea></td>
+                <td><input type="text" name="profissao" id="profissao" placeholder="profissao" required="true"></td>
+            </tr>
+            <tr>
+                <td><label for="cpf">CPF</label></td>
+                <td><label for="rg">RG</label></td>
+            </tr>
+            <tr>
+                <td><input type="file" name="cpf" id="cpf"></td>
+                <td><input type="file" name="rg" id="rg"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="submit" name="submit" value="Enviar" ></label></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
