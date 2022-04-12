@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    height: 100vh;
+    background-color: #EBF5FB;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.lef .right, form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left {
+    width: 270px;
+    align-items: flex-start;
+}
+
+.left img {
+    height: 104px;
+}
+
+.left p {
+    font-size: 28px;
+    width: 500px;
+    color: #212F3D;
+    height: 200px;
+    font-family: 'roboto', sans-serif;
+    position: relative;
+    left: 27px;
+}
+
+form {
+    background-color: #F8F9F9;
+    border-radius: 7px;
+    width: 400px;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0);
+}
+
+form input {
+    width: 100%;
+    padding: 17px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #D7DBDD;
+    outline: none;
+    font-size: 16px;
+    
+}
+
+form input:focus {
+    border: 1px solid #5DADE2;
+}
+
+.right_loginBtn {
+    background-color: #1E88E5;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    color: #F8F9F9;
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.right_loginBtn--hover:hover {
+    background-color: #85C1E9;
+}
+
+.right_forget {
+    margin: 15px 0;
+    text-decoration: none;
+    color: #2980B9;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+}
+
+.right_sign-up {
+    padding-top: 20px;
+    border-top: 1px solid #BDBDBD;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.right_sign-UpBtn {
+    background-color: #2ECC71;
+    padding: 13px;
+    margin: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    font-family: 'arial';
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.right_sign-upBtn--hover:hover {
+    background-color: #ABEBC6;
+}
+
+.right p {
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
