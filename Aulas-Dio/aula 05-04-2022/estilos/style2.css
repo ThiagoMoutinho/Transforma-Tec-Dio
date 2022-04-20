@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+}
+
+div {
+    width: 80%;
+    height: 600px;
+    background-color: bisque;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid cornflowerblue;
+    border-radius: 10px;
+}
+
+label {
+    color: cadetblue;
+    font-size: 18px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dados {
+    padding: 18px 28px;
+    margin: 8px 0;
+    display: flex;
+    border: 1px solid #E5E7E9;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.dados:hover {
+    background-color: #E5E7E9;
+}
+
+#button {
+    background-color: cadetblue;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 3px;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+}
+
+#button:hover {
+    background-color: cornflowerblue;
+}
+
