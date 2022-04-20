@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'roboto', sans-serif;
+    font-family: sans-serif;
     font-size: 14px;
 }
 
@@ -19,6 +19,7 @@ body {
 
 .container {
     display: flex;
+    align-items: center;
     align-content: center;
     justify-content: start;
     width: 60%;
@@ -39,7 +40,6 @@ body {
 .continue {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     flex-direction: column;
     width: 50%;
     min-width: 34rem;
@@ -54,6 +54,8 @@ body {
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid #E0E0E0;
+    margin-top: 0.7rem;
+
 }
 
 .continue__group:nth-child(1) {
@@ -74,4 +76,99 @@ body {
 
 .continue__profile-photo img{
     height: 6rem;
+}
+
+.continue__login {
+    background-color: #2980B9;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+div .continue__login:hover {
+    background-color: #1B4F72;
+}
+
+.continue__logout {
+    color: #0095f6;
+}
+
+.continue__not-account {
+    color: rgb(160, 160, 160);
+}
+
+.continue__link {
+    color: #0095f6;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.app__download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+} 
+
+.app__platform {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app__platform:nth-child(1) {
+    background-image: url(../img/apple-button.png); 
+}
+
+.app__platform:nth-child(2) {
+    background-image: url(../img/googleplay-button.png);
+}
+
+/* Responsividade */
+
+@media only screen and (max-width: 1024px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    body{
+        background-color: white;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .phone{
+        display: none;
+    }
+
+    .continue{
+        width: 100%;
+    }
+
+    .continue__group{
+        border: 1px solid transparent;
+    }
+}
+
+@media only screen and (max-width:400px){
+    
+    .container{
+        width: 100%;
+    }
+
+    .app{
+        display: none;
+    }
 }
