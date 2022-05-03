@@ -25,30 +25,29 @@
 
             <input type="submit" id="submit_btn" value="cadastrar">
         </form>
+    </div>
 
 
-        <script>
-            document.getElementById("my_form").addEventListener("submit", submitForm) 
-            function submitForm() {
-                let name = document.getElementById("name").value;
-                let last_name = document.getElementById("last_name").value;
-                let age = document.getElementById("age").value;
-                let email = document.getElementById("email").value;
-                let password = document.getElementById("password").value; 
-                let confirm = document.getElementById("confirm").value;
+    <script>
+        document.getElementById("my_form").addEventListener("submit", submitForm) 
+        function submitForm() {
+            let name = document.getElementById("name").value;
+            let last_name = document.getElementById("last_name").value;
+            let age = document.getElementById("age").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value; 
+            let confirm = document.getElementById("confirm").value;
 
-                if(name=="" || last_name=="" || age=="" || email=="" || password=="" || confirm=="") {
-                    alert("Não são permitidos campos vazios")
+            if(name=="" || last_name=="" || age=="" || email=="" || password=="" || confirm=="") {
+                alert("Não são permitidos campos vazios")
+            } else {
+                if(password != confirm) {
+                    alert("Senhas não conferem")
                 } else {
-                    if(password != confirm) {
-                        alert("Senhas não conferem")
-                    } else {
-                        alert("Email: " + email + " cadastrado com sucesso! ")
-                    }
+                    alert("Email: " + email + " cadastrado com sucesso! ")
                 }
             }
-        </script>
-
-    </div>
+        }
+    </script>
 </body>
 </html>
